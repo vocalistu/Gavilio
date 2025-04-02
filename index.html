@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavian Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <h2>Log In</h2>
+        <form action="#">
+            <div class="form-control">
+                <input type="text" id="usn" required>
+                <label>Username</label>
+            </div>
+            <div class="form-control">
+                <input type="password" id="pswd" required>
+                <label>Password</label>
+            </div>
+            <button input type="button" onclick="login()" id="submit"value="Login">Log In</button>
+            <div class="form-help"> 
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="https://t.me/Gaviansbot">Forgot Password?</a>
+            </div>
+        </form>
+        <small>
+            This page is protected by Ezrian Winartha.<br>
+            <a href="https://t.me/vocalistu">Learn More.</a>
+        </small>
+    </div>
+</body>
+<script>
+
+function login (){
+
+let username =document.getElementById("usn").value;
+let password=document.getElementById("pswd").value;
+
+let website_username="bukangemini";
+let website_password="30112024"
+
+if( username == website_username && password == website_password ){
+window.location="homepage.html"
+}
+
+else alert ("Login Failed! Please Try Again.")
+}
+</script>
+</html>
